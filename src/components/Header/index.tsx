@@ -12,7 +12,7 @@ import card from "../../assets/card.svg";
 export const Header = () => {
   return (
     <header>
-      <div className="details-top">
+      <div className="details-on-top">
         <div className="items">
           <img src={save} alt="" />
           <p>

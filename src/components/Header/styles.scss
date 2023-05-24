@@ -11,14 +11,14 @@ $text-color: #9F9F9F;
 
 
 
-header {
+header {                        
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1280px;
-    margin: auto;
+    margin: 0 auto 10px auto;
 
-    .details-top{
+    .details-on-top{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,6 +29,7 @@ header {
         .items{
             display: flex;
             gap: 9px;
+
             img{
                 width: 20px;
             }
@@ -95,6 +96,10 @@ header {
         display: flex;
         list-style: none;
         gap: 91px;      
+
+        li{
+            cursor: pointer;
+        }
     }
   }
 }
