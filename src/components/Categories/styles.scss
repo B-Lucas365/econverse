@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+
+  .slick-list {
+    padding: 38px 0;
+
+    .slick-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 128px;
+      max-width: 128px;
+      margin: 0 1rem;
+      background: #f4f4f4;
+      border-radius: 10px;
+    }
+  }
+}
