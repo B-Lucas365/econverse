@@ -16,46 +16,56 @@ import "slick-carousel/slick/slick-theme.css";
 
 export const Categories = () => {
   const settings = {
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
-    infinite: false,
+    infinite: true,
     speed: 6000,
-    slidesToShow: 7,
+    slidesToShow: 8,
     slidesToScroll: 1,
   };
 
   return (
     <div className="container">
       <Slider {...settings}>
-        <div className="item tecnologia">
+        <div className="item ">
           <img src={tecnologia} alt="" />
+          <p>Tecnologia</p>
         </div>
-        <div className="item">
+        <div className="item tecnologia">
           <img src={supermercado} alt="" />
+          <p>Supermercado</p>
         </div>
         <div className="item">
           <img src={bebidas} alt="" />
+          <p>Bebidas</p>
         </div>
         <div className="item">
           <img src={ferramentas} alt="" />
+          <p>Ferramentas</p>
         </div>
         <div className="item">
           <img src={saude} alt="" />
+          <p>Saúde</p>
         </div>
         <div className="item">
           <img src={esportes} alt="" />
+          <p>Esportes</p>
         </div>
         <div className="item">
           <img src={moda} alt="" />
+          <p>Moda</p>
         </div>
         <div className="item">
           <img src={mercado} alt="" />
+          <p>Mercado</p>
         </div>
         <div className="item">
           <img src={bread} alt="" />
+          <p>Padaria</p>
         </div>
         <div className="item">
           <img src={suchi} alt="" />
+          <p>Oriental</p>
         </div>
       </Slider>
     </div>
