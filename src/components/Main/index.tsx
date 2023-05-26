@@ -1,3 +1,4 @@
+import { Brands } from "../Brands";
 import { CardInfo } from "../CardInfo";
 import { Promo } from "../CardPromo";
 import { Categories } from "../Categories";
@@ -23,6 +24,10 @@ export const Main = () => {
         <CardInfo title="Produtos" produtos='284px'/>
         <CardInfo title="Produtos" produtos='284px'/>
       </div>
+
+      <Brands />
+
+      <Products tipes={false} more="Ver todos"/>
 
     </main>
   );
