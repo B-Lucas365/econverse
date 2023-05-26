@@ -1,0 +1,29 @@
+@import '/src/global';
+
+.container-modal{
+    display: flex;
+    align-items: flex-start;
+    gap: 87px;
+
+    .title{
+        font-size: 20px;
+        margin-bottom: 21.07px;
+    }
+
+
+    .price{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 17.7px;
+    }
+
+    .description{
+        font-size: 10px;
+        margin-bottom: 25.29px;
+    }
+
+    .link{
+        font-size: 12px;
+        color:#041E50 ;
+    }
+}

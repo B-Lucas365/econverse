@@ -5,6 +5,7 @@ import { ProductsTypes } from "../../types/products";
 
 import left from "/left.svg";
 import right from "/right.svg";
+import { ModalComponent } from "../Modal";
 
 interface Props {
   tipes: boolean,
@@ -17,6 +18,8 @@ export const Products = ({tipes, more}: Props) => {
 
   const [products, setProducts] = useState<ProductsTypes[]>();
   const carousel = useRef<HTMLDivElement | null>(null);
+  const [modal, setModal] = useState(false)
+  const [details, setDetails] = useState<ProductsTypes>({} as ProductsTypes);
 
   useEffect(() => {
     axios({
@@ -44,6 +47,15 @@ export const Products = ({tipes, more}: Props) => {
       carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
   };
+
+  function handleOpenModal(product: ProductsTypes){
+    setDetails(product)
+    setModal(true)
+  }
+  
+  function handleCloseModal(){
+    setModal(false)
+  }
 
   return (
     <div className="container">
@@ -84,7 +96,7 @@ export const Products = ({tipes, more}: Props) => {
             <div className="buttons">
               <span>Frete grátis</span>
               <br />
-              <button className="shop">Comprar</button>
+              <button className="shop" onClick={() => handleOpenModal(product)}>Comprar</button>
             </div>
           </div>
         ))}
@@ -95,6 +107,8 @@ export const Products = ({tipes, more}: Props) => {
       <button onClick={handleRightClick} className="arrow-right">
         <img src={right} alt="" />
       </button>
+
+      <ModalComponent isOpen={modal} onRequestClose={handleCloseModal} details={details}/>
     </div>
   );
 };
