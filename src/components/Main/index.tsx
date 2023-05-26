@@ -19,6 +19,11 @@ export const Main = () => {
 
       <Products tipes={false} more="Ver todos"/>
 
+      <div className="produtos">
+        <CardInfo title="Produtos" produtos='284px'/>
+        <CardInfo title="Produtos" produtos='284px'/>
+      </div>
+
     </main>
   );
 };

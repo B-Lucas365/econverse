@@ -1,38 +1,52 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  $grey-color: #f6f5f2;
-  $pink-color: #f71963;
-  $text-color: #9f9f9f;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$grey-color: #f6f5f2;
+$pink-color: #f71963;
+$text-color: #9f9f9f;
 
 .card-info {
-    width: 574px;
-    height: 350px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%), url('/public/parceiros.png');
-    border-radius: 20px;
+  width: 574px;
+  height: 350px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%),
+    url("/public/parceiros.png");
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 8px;
+
+  &.has-produtos {
+    h3{
+        margin-top: 48px;
+    }
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 114px;
+    margin-left: 40px;
+    
+  }
+
+  div {
     display: flex;
     flex-direction: column;
-    color: #fff;
-    
-    h3{
-        font-size: 40px;
-        font-weight: bold;
-        margin-top: 114px;
-        margin-left: 40px;
-    }
+    gap: 32px;
 
-    div{
-        max-width: 181px;
-        margin-left: 40px;
-        button{
-            background-color:$pink-color ;
-            border: none;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 10px;
-        }
+    max-width: 181px;
+    margin-left: 40px;
+    button {
+      background-color: $pink-color;
+      border: none;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      max-width: 131px;
     }
+  }
 }
