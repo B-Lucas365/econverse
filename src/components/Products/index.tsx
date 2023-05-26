@@ -6,7 +6,12 @@ import { ProductsTypes } from "../../types/products";
 import left from "/left.svg";
 import right from "/right.svg";
 
-export const Products = () => {
+interface Props {
+  tipes: boolean,
+  more?: string
+}
+
+export const Products = ({tipes, more}: Props) => {
   const url =
     "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json";
 
@@ -43,6 +48,8 @@ export const Products = () => {
   return (
     <div className="container">
       <h2 className="title">Produtos relacionados</h2>
+      <p className="more">{more}</p>
+      {tipes && (
       <div className="tipes">
         <div className="focus">CELULAR</div>
         <div>ACESSÓRIOS</div>
@@ -51,6 +58,7 @@ export const Products = () => {
         <div>TVS</div>
         <div>VER TODOS</div>
       </div>
+    )}
 
       <div className="products" ref={carousel}>
         {products?.map((product) => (

@@ -27,6 +27,11 @@ $text-color: #9f9f9f;
     text-align: center;
   }
 
+  .more {
+    text-align: center;
+    cursor: pointer;
+  }
+
   .tipes {
     display: flex;
 
@@ -54,6 +59,9 @@ $text-color: #9f9f9f;
     gap: 62px;
     margin-top: 20px;
     padding: 0.5rem;
+
+    scrollbar-width: none; /* Oculta a barra de rolagem */    
+    
 
     .product {
       width: 270px;
