@@ -14,7 +14,7 @@ export const CardInfo = ({ title, produtos }: Props) => {
       <h3>{title}</h3>
       <div>
         <p>Lorem ipsum dolor sit amet, consectetur</p>
-        <button>Confira</button>
+        <button>CONFIRA</button>
       </div>
     </div>
   );

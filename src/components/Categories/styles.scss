@@ -1,22 +1,12 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import '/src/global';
+
 
 .containerCategories {
-  width: 100%;
-  max-width: 1266px;
-  margin: auto;
+  @include container;
   overflow-x: hidden;
   margin-top: 30px;
-  padding: 0 1rem;
-  @media (max-width: 1440px) {
-    padding: 0 3rem;
-  }
 
   .slick-list {
-    
     .slick-slide {
       display: flex;
       align-items: center;

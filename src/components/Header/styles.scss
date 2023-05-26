@@ -1,21 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+@import '/src/global';
 
-$grey-color: #F6F5F2;
-$pink-color: #F71963;
-$text-color: #9F9F9F;
-
-
-
-header {                        
+header {   
+    @include container;                     
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1280px;
     margin: 0 auto 10px auto;
 
     .details-on-top{

@@ -1,13 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-$grey-color: #f6f5f2;
-$pink-color: #f71963;
-$text-color: #9f9f9f;
-$footer-background: #2a2a2a;
+@import '/src/global';
 
 footer {
   background-color: $footer-background;
@@ -15,10 +6,7 @@ footer {
   margin-top: 169px;
 
   .footer-container {
-    width: 100%;
-    max-width: 1280px;
-    height: 100%;
-    margin: auto;
+    @include container;
 
     display: flex;
     justify-content: space-between;
@@ -141,6 +129,10 @@ footer {
           padding: 12px 21px;
           font-size: 14px;
           font-weight: bold;
+          cursor: pointer;
+          &:hover{
+            filter: brightness(.9);
+        }
         }
       }
     }

@@ -19,7 +19,6 @@ export const Footer = () => {
             <h3>Sobre nós</h3>
             <div>
               <p>CONHEÇA</p>
-              <p>COMO COMPRAR</p>
               <p>INDICAÇAO E DESCONTO</p>
             </div>
           </div>

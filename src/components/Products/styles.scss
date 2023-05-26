@@ -1,25 +1,8 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-$grey-color: #f6f5f2;
-$pink-color: #f71963;
-$text-color: #9f9f9f;
+@import "/src/global";
 
 .container {
-  font-family: "Poppins", sans-serif;
-  overflow: visible;
+  @include container;
   position: relative;
-  width: 100%;
-  max-width: 1266px;
-  margin: auto;
-  padding: 0 1rem;
-
-  @media (max-width: 1440px) {
-    padding: 0 3rem;
-  }
 
   .title {
     color: $pink-color;
@@ -60,8 +43,7 @@ $text-color: #9f9f9f;
     margin-top: 20px;
     padding: 0.5rem;
 
-    scrollbar-width: none; /* Oculta a barra de rolagem */    
-    
+    scrollbar-width: none; /* Oculta a barra de rolagem */
 
     .product {
       width: 270px;
@@ -106,6 +88,10 @@ $text-color: #9f9f9f;
           font-size: 14;
           font-weight: bold;
           border-radius: 5px;
+          cursor: pointer;
+          &:hover {
+            filter: brightness(0.9);
+          }
         }
       }
     }

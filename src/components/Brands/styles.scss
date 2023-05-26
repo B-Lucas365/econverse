@@ -1,23 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  $grey-color: #f6f5f2;
-  $pink-color: #f71963;
-  $text-color: #9f9f9f;
+@import '/src/global';
 
 .brands {
-  font-family: "Poppins", sans-serif;
-  overflow: visible;
-  width: 100%;
-  max-width: 1266px;
+  @include container;
   margin: 0 auto 89px auto;
-  padding: 0 1rem;
-  @media (max-width: 1440px) {
-    padding: 0 3rem;
-  }
 
   .title{
     text-align: center;
