@@ -20,12 +20,12 @@ export const Categories = () => {
     autoplaySpeed: 2000,
     infinite: true,
     speed: 6000,
-    slidesToShow: 8,
+    slidesToShow: 7,
     slidesToScroll: 1,
   };
 
   return (
-    <div className="container">
+    <div className="containerCategories">
       <Slider {...settings}>
         <div className="item ">
           <img src={tecnologia} alt="" />

@@ -10,7 +10,17 @@ $text-color: #9f9f9f;
 
 .container {
   font-family: "Poppins", sans-serif;
-  
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  max-width: 1266px;
+  margin: auto;
+  padding: 0 1rem;
+
+  @media (max-width: 1440px) {
+    padding: 0 3rem;
+  }
+
   .title {
     color: $pink-color;
     font-size: 30px;
@@ -36,10 +46,6 @@ $text-color: #9f9f9f;
     }
   }
 
-  .teste{
-    position: relative;
-  }
-
   .products {
     display: flex;
     width: 100%;
@@ -47,8 +53,7 @@ $text-color: #9f9f9f;
     scroll-behavior: smooth;
     gap: 62px;
     margin-top: 20px;
-    padding: .5rem;
-    
+    padding: 0.5rem;
 
     .product {
       width: 270px;
@@ -97,25 +102,33 @@ $text-color: #9f9f9f;
       }
     }
   }
-  .arrow-left{
-      position: absolute;
-      top: 50%;
-      left: -1rem;
-      border: none;
-      background-color: transparent;
-      padding: .5rem;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
+  .arrow-left {
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    transform: translateY(-50%);
+    cursor: pointer;
 
-    .arrow-right {
-      position: absolute;
-      top: 50%;
-      right: -1rem;
-      border: none;
-      background-color: transparent;
-      padding: .5rem;
-      transform: translateY(-50%);
-      cursor: pointer;
+    @media (max-width: 1440px) {
+      left: 0;
     }
+  }
+
+  .arrow-right {
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @media (max-width: 1440px) {
+      right: 0;
+    }
+  }
 }
