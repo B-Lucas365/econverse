@@ -5,8 +5,10 @@
   @include container;
   overflow-x: hidden;
   margin-top: 30px;
+  margin-bottom: 40px;
 
   .slick-list {
+    height: 200px;
     .slick-slide {
       display: flex;
       align-items: center;

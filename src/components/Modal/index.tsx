@@ -10,11 +10,7 @@ interface ModalProps {
   details: ProductsTypes;
 }
 
-export const ModalComponent = ({
-  isOpen,
-  onRequestClose,
-  details,
-}: ModalProps) => {
+export const ModalComponent = ({isOpen, onRequestClose, details}: ModalProps) => {
   return (
     <Modal
       isOpen={isOpen}
