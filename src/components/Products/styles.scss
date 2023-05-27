@@ -2,7 +2,7 @@
 
 .container {
   @include container;
-  
+
   position: relative;
 
   .title {
@@ -43,8 +43,13 @@
     gap: 62px;
     margin-top: 20px;
     padding: 0.5rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
-    scrollbar-width: none; /* Oculta a barra de rolagem */
 
     .product {
       width: 270px;
