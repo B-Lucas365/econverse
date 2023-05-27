@@ -9,63 +9,82 @@ import pix from "../../assets/brands/pix.svg";
 import amex from "../../assets/brands/amex.svg";
 import ticket from "../../assets/brands/ticket.svg";
 import sodexo from "../../assets/brands/sodexo.svg";
+import ecoverse from "../../assets/ecoverse.svg";
+import vtex from "../../assets/vtex.svg";
 
 export const Footer = () => {
   return (
     <footer>
       <div className="footer-container">
-        <div className="content">
-          <div className="about">
-            <h3>Sobre nós</h3>
-            <div>
-              <p>CONHEÇA</p>
-              <p>INDICAÇAO E DESCONTO</p>
+        <div className="teste">
+          <div className="content">
+            <div className="about">
+              <h3>Sobre nós</h3>
+              <div>
+                <p>CONHEÇA</p>
+                <p>INDICAÇAO E DESCONTO</p>
+              </div>
             </div>
-          </div>
-          <div className="util">
-            <h3>INFORMAÇÕES ÚTEIS</h3>
-            <div>
-              <p>FALE CONOSCO</p>
-              <p>DÚVIDAS</p>
-              <p>PRAZOS DE ENTREGA</p>
-              <p>FORMAS DE PAGAMENTO</p>
-              <p>POLÍTICA DE PRIVACIDADE</p>
-              <p>TROCAS E DEVOLUÇÕES</p>
+            <div className="util">
+              <h3>INFORMAÇÕES ÚTEIS</h3>
+              <div>
+                <p>FALE CONOSCO</p>
+                <p>DÚVIDAS</p>
+                <p>PRAZOS DE ENTREGA</p>
+                <p>FORMAS DE PAGAMENTO</p>
+                <p>POLÍTICA DE PRIVACIDADE</p>
+                <p>TROCAS E DEVOLUÇÕES</p>
+              </div>
+            </div>
+
+            <div className="payment">
+              <h3>FORMAS DE PAGAMENTO</h3>
+              <div className="payment-methods">
+                <img src={visa} alt="" />
+                <img src={elo} alt="" />
+                <img src={alelo} alt="" />
+                <img src={dinners} alt="" />
+                <img src={ifood} alt="" />
+                <img src={mastercard} alt="" />
+                <img src={pix} alt="" />
+                <img src={amex} alt="" />
+                <img src={ticket} alt="" />
+                <img src={sodexo} alt="" />
+              </div>
             </div>
           </div>
 
-          <div className="payment">
-            <h3>FORMAS DE PAGAMENTO</h3>
-            <div className="payment-methods">
-              <img src={visa} alt="" />
-              <img src={elo} alt="" />
-              <img src={alelo} alt="" />
-              <img src={dinners} alt="" />
-              <img src={ifood} alt="" />
-              <img src={mastercard} alt="" />
-              <img src={pix} alt="" />
-              <img src={amex} alt="" />
-              <img src={ticket} alt="" />
-              <img src={sodexo} alt="" />
+          <div className="register">
+            <div className="infos">
+              <h3>CADASTRE-SE E RECEBA NOSSAS</h3>
+              <p>NOVIDADES E PROMOÇOES</p>
+            </div>
+            <div className="description">
+              <p>
+                Excepteur sint occaecat cudatat non ent, sunt in culpa qui
+                officia lorem ipsum
+              </p>
+            </div>
+
+            <div className="inputs">
+              <input type="text" placeholder="SEU EMAIL" />
+              <button>OK</button>
             </div>
           </div>
         </div>
-
-        <div className="register">
-          <div className="infos">
-            <h3>CADASTRE-SE E RECEBA NOSSAS</h3>
-            <p>NOVIDADES E PROMOÇOES</p>
-          </div>
-          <div className="description">
+        <div className="div-on-bottom">
+          <div className="copyright ">
             <p>
-              Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia
-              lorem ipsum
+              Copyright © 2019. Todos os direitos reservados. Todas as marcas e
+              suas imagens são de propriedade de seus respectivos donos. É
+              vedada a reprodução, total ou parcial, de qualquer conteúdo sem
+              expressa autorização.
             </p>
           </div>
 
-          <div className="inputs">
-            <input type="text" placeholder="SEU EMAIL" />
-            <button>OK</button>
+          <div className="partners">
+            <img src={ecoverse} alt="" />
+            <img src={vtex} alt="" />
           </div>
         </div>
       </div>
